@@ -34,10 +34,12 @@ nav{
 nav li{
 	display: inline-block;
 	margin: 20px 28px;
+	font-size: 16px;
+	font-weight: bold;
 }
 nav li:hover{
 	color: green;
-	text-decoration-line: underline;
+
 }
 #logo {
 	float: left;
@@ -59,8 +61,13 @@ aside {
 	margin-top: 10px;
 }
 aside li{
-	text-align: right;
-	margin-bottom: 30px;
+	text-align: center;
+	border: 1px solid #bbbbbb;
+	padding: 20px;
+}
+.special:hover{
+	background-color: #111155;
+	color: white;
 }
 #sub1{
 	
@@ -150,10 +157,10 @@ footer{
 </section>
 <aside>
 	<ul>
-		<li> 사용자별맞춤메뉴</li>
-		<li> 일반인 </li>
-		<li> 연구자 </li>
-		<li> 언론인 </li>
+		<li style="background-color: skyblue; color:white"> 사용자별<br>맞춤메뉴</li>
+		<li class="special"> 일반인 </li>
+		<li class="special"> 연구자 </li>
+		<li class="special"> 언론인 </li>
 	</ul>
 </aside>
 <section>
