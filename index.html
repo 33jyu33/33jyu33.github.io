@@ -34,11 +34,11 @@ nav{
 nav li{
 	display: inline-block;
 	margin: 20px 28px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 }
 nav li:hover{
-	color: green;
+	color: #44bb88;
 
 }
 #logo {
@@ -115,9 +115,25 @@ aside li{
 }
 footer{
 	width: 1300px;
-	height: 100px;
-	margin: 10px 0 10px 0;
+	height: 200px;
+	margin: 80px 0 10px 0;
 	border: 0px solid #bbbbbb;
+}
+#footsec{
+	height: 100px;
+	margin-top: 20px;
+	border-top: 1px solid #555555;
+}
+#footnav{
+	width: 1300px;
+	margin: 0;
+	padding-top: 20px;
+}
+#footnav li{
+	font-size: 17px;
+	margin: 4px;
+	color: #555555;
+	display: inline;
 }
 #address{
 	float: left;
@@ -126,16 +142,15 @@ footer{
 #customer{
 	float: right;
 	margin: 10px 0 0 180px;
-}
 </style>
 </head>
 <body id="page">
 <header>
-<div id="logo">
+<a href="https://33jyu33.github.io/"><div id="logo">
 	<img src="./12/logo.png">
-</div>
+</div></a>
 <div id="top">
-	로그인 | 회원가입 | <a href="./12/myself.html">마이페이지</a> | 고객센터
+	로그인 | 회원가입 | <a style="color: black;" href="./12/myself.html">마이페이지</a> | 고객센터
 </div>
 </header>
 <div class="clear"></div>
@@ -143,7 +158,7 @@ footer{
 	<ul>
 		<li>감염병</li>
 		<li>건강정책</li>
-		<li>정책정보</li>
+		<a href="./12/index1.html"><li style="color: black;">정책정보</li></a>
 		<li>연구개발</li>
 		<li>알림.자료</li>
 		<li>간행물.통계</li>
@@ -190,6 +205,20 @@ footer{
 </section>
 <div class="clear"></div>
 <footer>
+	<section id="footsec">
+		<nav id="footnav">
+			<ul>
+				<li style="font-weight: bold;font-size: 19px;">관련링크</li>
+				<li>임상진료지침 디지털 가이드라인</li>
+				<li>KoGES</li>
+				<li>질병관리본부국제학술지</li>
+				<li>만성신장병코호트연구</li>
+				<li>국민건강영양조사</li>
+				<li>국립의과학지식센터</li>
+				<li>보건복지통계</li>
+			</ul>
+		</nav>
+	<section class="footsec">
 	<div id="address">
 		<img src="./12/a1.PNG">
 	</div>
