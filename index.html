@@ -15,31 +15,33 @@ li {
 	clear: both;
 }
 #page{
-	width: 1300px;
+	width: 1200px;
 	margin: auto;
-	border: 0px solid #bbbbbb;
 }
 header{
-	width: 1300px;
+	width: 1200px;
 	height: 100px;
 	margin-top: 10px;
-	border: 0px solid #bbbbbb;
 }
-nav{
-	width: 1300px;
-	margin-top: 10px;
+#nav{
+	width: 1200px;
 	height: 70px;
-	border: 0px solid #bbbbbb;
+	border-top: 1px solid #E9ECF1;
+	border-bottom: 1px solid #E9ECF1;
 }
-nav li{
+#nav li{
 	display: inline-block;
-	margin: 20px 28px;
-	font-size: 20px;
+	margin: 20px 20px;
+	font-size: 18px;
+	font-family: "맑은고딕";
 	font-weight: bold;
+	color: black;
 }
-nav li:hover{
+#nav li:hover{
 	color: #44bb88;
-
+}
+#sp:hover{
+	color: #44bb88;
 }
 #logo {
 	float: left;
@@ -55,16 +57,6 @@ section {
 	border: 0px solid #bbbbbb;
 	padding-bottom: 20px;
 }
-aside {
-	float: right;
-	border: 0px solid #bbbbbb;
-	margin-top: 10px;
-}
-aside li{
-	text-align: center;
-	border: 1px solid #bbbbbb;
-	padding: 20px;
-}
 .special:hover{
 	background-color: #111155;
 	color: white;
@@ -74,77 +66,140 @@ aside li{
 }
 #sub1 li {
 	display: inline-block;
+	height: 150px;
+	width: 288px;
+	overflow: hidden;
+}
+#sub11 li{
+	width: 288px;
+	height: 45px;
+	font-weight: bold;
+	display: inline-block;
 	text-align: center;
-	padding-right: 20px;
+	margin: 15px 0;
+}
+#sub1 img{
+	height: 150px;
+	width: 288px;
+	display: block;
 }
 #sub1 img:hover{
-	box-shadow: 5px 5px 10px gray;
-	transform: translate(5px, -5px);
-}
-#sub2{
+	transform: scale(1.1);
+	transition: transform 0.5s;
 }
 #sub2 img{
-	width: 80px;
-	height: 80px;
 	border-radius: 50% 50%;
 }
 #sub2 li{
 	display: inline-block;
-	padding-right: 20px;
 	text-align: center;
-	width: 160px;
+	width: 135px;
 }
-#sub2 img:hover{
+#sub2 li img:hover{
 	transform: scale(1.1);
+}
+#gs{
+	padding: 30px 15px;
+	float: right;
+}
+#gs li{
+	display: inline-block;
+	padding: 25px;
 }
 #sub3{
 }
 #sub3 li{
 	display: inline-block;
-	margin-right: 20px;
+	padding: 0px;
 	overflow: hidden;
+	width: 288px;
+}
+#sub31 li{
+	height: 60px;
+	width: 288px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	margin: 10px 0;
+	border-bottom: 2px solid #D8DCE1;
+}
+#sub31 span{
+	font-size: 15px;
+	color: #555555;
 }
 #sub3 img{
-	width: 250px;
+	width: 288px;
 	height: 180px;
 	display: block;
 }
 #sub3 img:hover{
 	transform: scale(1.1);
-	transition: transform 1s;
+	transition: transform 0.3s;
 }
 footer{
-	width: 1300px;
-	height: 200px;
+	width: 100%;
+	height: 250px;
 	margin: 80px 0 10px 0;
-	border: 0px solid #bbbbbb;
+	background-color: #F5F6FA;
 }
 #footsec{
-	height: 100px;
-	margin-top: 20px;
-	border-top: 1px solid #555555;
+	height: 80px;
+	margin-top: 0px;
+	border-top: 1px solid #D8DCE1;
+	padding-bottom: 0px;
 }
 #footnav{
-	width: 1300px;
-	margin: 0;
+	width: 1200px;
+	height: 40px;
+	margin: 0px;
 	padding-top: 20px;
+	background-color: white;
 }
 #footnav li{
-	font-size: 17px;
-	margin: 4px;
+	font-size: 15px;
+	margin: 5px;
 	color: #555555;
 	display: inline;
 }
+#line{
+	width: 1200px;
+	height: 30px;
+	padding-top: 0px;
+	color: #555555;
+}
+#line li{
+	margin: 0px 2px;
+	display: inline-block;
+	font-weight: bold;
+}
+#line1{
+	float: left;
+}
+#line1 li{
+	font-size: 14px;
+}
+#line2{
+	float: right;
+}
+#line2 li{
+	border: 1px solid #D8DCE1;
+	font-size: 14px;
+	padding: 0px 10px;
+	width: 180px;
+	height: 23px;
+	padding: 7px;
+}
 #address{
 	float: left;
-	margin: 10px 0 0 10px;
+	margin: 0px 0 0 10px;
 }
 #customer{
 	float: right;
-	margin: 10px 0 0 180px;
+	margin: 5px 0 0 180px;
 </style>
 </head>
 <body id="page">
+<div style="position: fixed; background-color: white;">
 <header>
 <a href="https://33jyu33.github.io/"><div id="logo">
 	<img src="./12/logo.png">
@@ -154,53 +209,70 @@ footer{
 </div>
 </header>
 <div class="clear"></div>
-<nav>
+<nav id="nav">
 	<ul>
 		<li>감염병</li>
-		<li>건강정책</li>
-		<a href="./12/index1.html"><li style="color: black;">정책정보</li></a>
+		<li>건강정보</li>
+		<a href="./12/index1.html"><span id="sp"><li>정책정보</li></span></a>
 		<li>연구개발</li>
-		<li>알림.자료</li>
-		<li>간행물.통계</li>
-		<li>민원.정보공개</li>
+		<li>알림ㆍ자료</li>
+		<li>간행물ㆍ통계</li>
+		<li>민원ㆍ정보공개</li>
+		<li>기관소개</li>
 		<li>사업별홈페이지</li>
 	</ul>
 </nav>
+</div>
 <div class="clear"></div>
 <section>
-	<img src="./12/main.png" width="1080">
+	<img style="margin-top: 170px;" src="./12/main.png" width="1200px">
 </section>
-<aside>
-	<ul>
-		<li style="background-color: skyblue; color:white"> 사용자별<br>맞춤메뉴</li>
-		<li class="special"> 일반인 </li>
-		<li class="special"> 연구자 </li>
-		<li class="special"> 언론인 </li>
-	</ul>
-</aside>
 <section>
 	<ul id="sub1">
-		<li><img src="./12/pic1.png" width="250"><br> 온열질환 건강수칙</li>
-		<li><img src="./12/pic2.png" width="250"><br> 비브리오패혈증 예방수칙</li>
-		<li><img src="./12/pic3.png" width="250"><br> 미세먼지 건강수칙</li>
-		<li><img src="./12/pic4.png"width="250"><br> 코로나19 영상자료</li>
+		<li style="margin-right: 10px;"><img src="./12/pic1.png" width="288"></li>
+		<li style="margin-right: 10px;"><img src="./12/pic2.png" width="288"></li>
+		<li style="margin-right: 10px;"><img src="./12/pic3.png" width="288"></li>
+		<li><a href="./12/index2.html"><img src="./12/pic4.png"width="288"></a></li>
+	</ul>
+	<ul id="sub11">
+		<li style="margin-right: 10px; border-bottom: 2px solid #009176;">온열질환 건강수칙</li>
+		<li style="margin-right: 10px; border-bottom: 2px solid #3464B1;">비브리오패혈증 예방수칙</li>
+		<li style="margin-right: 10px; border-bottom: 2px solid #B9329A;">미세먼지 건강수칙</li>
+		<li style="border-bottom: 2px solid #009176;">코로나19 영상자료</li>
+	</ul>
 </section>
 <section>
 	<ul id="sub2">
-		<li><img src="./12/s2.PNG"><br>국가별 질병 정보</li>
-		<li><img src="./12/s3.png"><br>홍보자료</li>
-		<li><img src="./12/s4.png"><br>이달의 건강정보</li>
-		<li><img src="./12/s5.png"><br>조직도직원검색</li>
-		<li><img src="./12/s6.png"><br>법령.지침.서식</li>
+		<img src="./12/s1.png">
+		<li style="padding-right: 35px;"><img src="./12/s2.PNG"><br>국가별 질병 정보</li>
+		<li style="padding-right: 35px;"><img src="./12/s3.png"><br>홍보자료</li>
+		<li style="padding-right: 35px;"><img src="./12/s4.png"><br>간행물ㆍ통계</li>
+		<li style="padding-right: 35px;"><img src="./12/s5.png"><br>조직도ㆍ직원찾기</li>
+		<li style="padding-right: 35px;"><img src="./12/s6.png"><br>법령ㆍ지침ㆍ서식</li>
 		<li><img src="./12/s7.png"><br>공고/공시</li>
 	</ul>
 </section>
 <section>
+	<img src="./12/indexg1.PNG">
+	<ul id="gs">
+		<li><a href="https://www.facebook.com/koreacdcpr"><img src="./12/indexg2.PNG"></a></li>
+		<li><a href="https://twitter.com/KoreaCDC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./12/indexg3.PNG"></a></li>
+		<li><a href="https://post.naver.com/my.nhn?memberNo=20182790"><img src="./12/indexg4.PNG"></a></li>
+		<li><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw"><img src="./12/indexg5.PNG"></a></li>
+	</ul>
+</section>
+<section>
 	<ul id="sub3">
-		<li><a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be"><img src="./12/m1.png"></a></li>
-		<li><img src="./12/m2.png"></li>
-		<li><img src="./12/m3.png"></li>
+		<li style="margin-right: 10px;"><a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be"><img src="./12/m1.png"></a></li>
+		<li style="margin-right: 10px;"><img src="./12/m2.png"></li>
+		<li style="margin-right: 10px;"><img src="./12/m3.png"></li>
 		<li><img src="./12/m4.png"></li>
+	</ul>
+	<ul id="sub31">
+		<li style="margin-right: 10px;">진짜 힘은 손 씻을 때 생긴다!<br><span>마블 콜라보 질병예방 캠페인</span></li>
+		<li style="margin-right: 10px;">중동지역을 방문하셨나요?<br><span>메르스 의심증상 발생 시 1339</span></li>
+		<li style="margin-right: 10px;">기침예절 지켜요!<br><span>기침예절은 감염병 예방의 기본수칙</span></li>
+		<li>1339 질병관리본부 콜센터<br><span>질병정보 궁금할 때 감염병이 의심될 때</span></li>
 	</ul>
 </section>
 <div class="clear"></div>
@@ -208,7 +280,7 @@ footer{
 	<section id="footsec">
 		<nav id="footnav">
 			<ul>
-				<li style="font-weight: bold;font-size: 19px;">관련링크</li>
+				<li style="font-weight: bold;font-size: 17px; margin-right: 30px;">관련링크 < > </li>
 				<li>임상진료지침 디지털 가이드라인</li>
 				<li>KoGES</li>
 				<li>질병관리본부국제학술지</li>
@@ -218,7 +290,24 @@ footer{
 				<li>보건복지통계</li>
 			</ul>
 		</nav>
-	<section class="footsec">
+	</section>
+	<div class="clear"></div>
+	<section>
+		<nav id="line">
+			<ul id="line1">
+				<li>이용안내</li>
+				<li style="color: #21A089;">개인정보처리방침</li>
+				<li>웹접근성품질인증</li>
+				<li>저작권정책</li>
+			</ul>
+			<ul id="line2">
+				<li>질병관리본부 관련기관</li>
+				<li>보건환경연구원</li>
+				<li>보건복지부 및 소속기관</li>
+				<li>보건복지부 산하기관</li>
+			</ul>
+		</nav>
+	</section>
 	<div id="address">
 		<img src="./12/a1.PNG">
 	</div>
