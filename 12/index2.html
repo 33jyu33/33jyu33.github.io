@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>20202252 이지유</title>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+.clear {
+	clear: both;
+}
+#page{
+	width: 1200px;
+	margin: auto;
+}
+header{
+	width: 1200px;
+	height: 100px;
+	margin-top: 10px;
+}
+#nav{
+	width: 1200px;
+	height: 70px;
+	border-top: 1px solid #E9ECF1;
+	border-bottom: 1px solid #E9ECF1;
+}
+#nav li{
+	display: inline-block;
+	margin: 20px 20px;
+	font-size: 18px;
+	font-family: "맑은고딕";
+	font-weight: bold;
+	color: black;
+}
+#nav li:hover{
+	color: #44bb88;
+}
+#sp{
+	color: black;
+}
+#sp:hover{
+	color: #44bb88;
+	}
+#logo {
+	float: left;
+	margin-top: 10px;
+}
+#top{
+	float: right;
+	margin: 30px 20px 0 0;
+}
+section {
+	float: left;
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+#left{
+	width: 280px;
+	float: left;
+	margin-top: 200px;
+}
+#info{
+	padding: 30px 10px 0px 12px;
+	color: #444444;
+	text-align: left;
+	font-size: 25px;
+}
+aside#left li{
+	color: #555555;
+	padding: 17px 0 17px 10px;
+	text-align: left;
+	border-bottom: 1px solid #D8DCE1;
+	font-size: 17px;
+	font-weight: bold;
+}
+aside nav{
+	height: 190px;
+	width: 270px;
+	margin: 0;
+	background-color: #F5F6FA;
+}
+#left ul{
+	padding: 18px 0 18px 10px;
+}
+#left nav li{
+	font-size: 15px;
+	text-align: left;
+	padding: 5px 0 5px 15px;
+	border: 0;
+	margin: 0;
+	display: block;
+}
+.special:hover{
+	background-color: #111155;
+	color: white;
+}
+#center{
+	width: 880px;
+	float: center;
+	margin-top: 200px;
+	padding: 15px 0px 0px 30px;
+}
+#center section{
+	width: 880px;
+	border-top: 3px solid;
+	border-bottom: 1px solid;
+}
+#center section li{
+	font-size: 15px;
+	display: inline;
+	margin: 5px 10px;
+}
+#one{
+	padding: 0 0 30px 0;
+	font-weight: bold;
+	font-size: 28px;
+	border-bottom: 2px solid;
+}
+.do{
+	float: right;
+}
+#two{
+	padding-top: 20px;
+}
+#two li{
+	background-color: #F5F6FA;
+	display: inline-block;
+	width: 395px;
+	font-size: 15px;
+	padding: 20px 20px;
+	text-align: center;
+	border: 1px solid #E9ECF1;
+}
+#div{
+	border: 1px solid #D8DCE1;
+	height: 90px;
+	display: block;
+	padding: 30px;
+	margin: 20px 0;
+	background-color: #F5F6FA;
+}
+#div li{
+	line-height: 180%;
+}
+#form{
+	padding-top: 30px;
+}
+#form li{
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+#form form{
+	float: right;
+	height: 40px;
+}
+#form select{
+	height: 40px;
+	width: 160px;
+	background-color: #F5F6FA;
+	border: 1px solid #D8DCE1;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 17px;
+}
+#form input{
+	height: 38px;
+	width: 220px;
+	border: 1px solid #D8DCE1;
+	height: 20px;
+	padding-top: 20px;
+}
+#form button{
+	height: 42px;
+	width: 40px;
+	background-color: #F5F6FA;
+	border: 1px solid #D8DCE1;
+}
+#k0{
+	width: 880px;
+	padding: 20px 0;
+	margin: 20px 0; 
+	border-top: solid 1px #D8DCE1;
+}
+#k0 img{
+	height: 170px;
+	width: 280px;
+	margin: 0 0 -4px 0;
+}
+#k0 img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+#k0 .k1 li{
+	font-size: 14px;
+	display: block;
+	overflow: hidden;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+.k1{
+	height: 250px;
+	width: 280px;
+	float: left;
+	text-align: center;
+	padding: 0;
+	margin: 10px 5px;
+	border: 1px solid #D8DCE1;
+}
+.k2{
+}
+.k3{
+	color: #919191;
+}
+footer{
+	width: 100%;
+	height: 250px;
+	margin: 80px 0 10px 0;
+	background-color: #F5F6FA;
+}
+#footsec{
+	height: 80px;
+	margin-top: 0px;
+	border-top: 1px solid #D8DCE1;
+	padding-bottom: 0px;
+}
+#footnav{
+	width: 1200px;
+	height: 40px;
+	margin: 0px;
+	padding-top: 20px;
+	background-color: white;
+}
+#footnav li{
+	font-size: 15px;
+	margin: 5px;
+	color: #555555;
+	display: inline;
+}
+#line{
+	width: 1200px;
+	height: 30px;
+	padding-top: 0px;
+	color: #555555;
+}
+#line li{
+	margin: 0px 2px;
+	display: inline-block;
+	font-weight: bold;
+}
+#line1{
+	float: left;
+}
+#line1 li{
+	font-size: 14px;
+}
+#line2 li{
+	border: 1px solid #D8DCE1;
+	font-size: 14px;
+	padding: 0px 10px;
+	width: 180px;
+	height: 23px;
+	padding: 7px;
+}
+#line2{
+	float: right;
+}
+#address{
+	float: left;
+	margin: 0px 0 0 10px;
+}
+#customer{
+	float: right;
+	margin: 5px 0 0 180px;
+</style>
+</head>
+<body id="page">
+<div style="position: fixed; background-color: white;">
+<header>
+<div id="logo">
+	<a href="https://33jyu33.github.io/"><img src="./logo.png"></a>
+</div>
+<div id="top">
+	로그인 | 회원가입 | <a style="color: black;" href="./myself.html">마이페이지</a> | 고객센터
+</div>
+</header>
+<div class="clear"></div>
+<nav id="nav">
+	<ul>
+		<li>감염병</li>
+		<li>건강정보</li>
+		<li><a href="./12/index1.html" style="text-decoration: none;"><span id="sp">정책정보</span></a></li>
+		<li>연구개발</li>
+		<li>알림ㆍ자료</li>
+		<li>간행물ㆍ통계</li>
+		<li>민원ㆍ정보공개</li>
+		<li>기관소개</li>
+		<li>사업별홈페이지</li>
+	</ul>
+</nav>
+</div>
+<div class="clear"></div>
+<aside id="left">
+	<div id="info">알림ㆍ자료</div>
+	<ul>
+			<li style="border-top: 2px solid #D8DCE1;">이달의건강소식</li>
+			<li>보도자료</li>
+			<li>포토뉴스</li>
+			<li style="background-color: #21A089;color: white;">홍보자료</li>
+		<nav>
+			<ul>
+				<li>카드뉴스</li>
+				<li>홍보지</li>
+				<li style="color: #21A089; font-weight: bold;">영상자료 -</li>
+				<li>라디오음원</li>
+				<li>교육자료</li>
+			</ul>
+		</nav>
+		<li>공지사항</li>
+		<li>공고/공시</li>
+		<li>채용공고</li>
+		<li>법령ㆍ지침ㆍ서식</li>
+	</ul>
+</aside>
+<section id="center">
+	<div id="one">영상자료<img class="do" src="./index1b.PNG"><img class="do" src="./index1a.png"></div>
+	<ul id="two">
+		<li style="background-color: white; color: #023561; border-top: 1px solid #023561; border-right: 1px solid #023561; border-bottom: 4px solid #023561; border-left: 1px solid #023561; font-weight: bold;">영상자료</li>
+		<li>라디오음원</li>
+	</ul>
+	<div id="div">
+		<img style="float: left;" src="./index2d.PNG">
+		<ul style="float: right;">
+			<li>본 동영상은 인터넷익스플로러(IE) 에서는 시청할 수 없습니다.</li>
+			<li>('20.3.1.부터 유튜브는 인터넷익스플로러 미지원')</li>
+			<li>인터넷익스플로러 이외의 브라우저(크롬, MS 엣지, 파이어폭스, 오페라 등)에서 시청하시기 바랍니다.</li>
+		</ul>
+	</div>
+	<ul id="form">
+		<li>전체 229건, 현재 페이지 <span style="color: orange;">1</span>/26</li>
+		<form>
+			<select>
+				<option>전체</option>
+				<option>제목</option>
+				<option>내용</option>
+				<option>작성자</option>
+			</select>
+			<input type="text">
+			<button type="button"><img src="./index2i.PNG"></button>
+		</form>
+	</ul>
+	<div class="clear"></div>
+	<section id="k0">
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k1.png"></li>
+				<li class="k2">[질병관리본부X좀비덤] 손을 씻…</li>
+				<li class="k3">위기소통담당관 | 2020-06-26</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k2.PNG"></li>
+				<li class="k2">[올바른 소독방법] 가정, 사업자,…</li>
+				<li class="k3">위기소통담당관 | 2020-06-26</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k3.PNG"></li>
+				<li class="k2">코로나19 예방 어린이 동화 "내 영웅…</li>
+				<li class="k3">위기소통담당관 | 2020-06-03</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k4.PNG"></li>
+				<li class="k2">[생활 속 거리 두기] 공익영상 "변화…</li>
+				<li class="k3">위기소통담당관 | 2020-05-26</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k5.PNG"></li>
+				<li class="k2">[생활 속 거리 두기] 공익영상 "변화…</li>
+				<li class="k3">위기소통담당관 | 2020-05-26<</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k6.PNG"></li>
+				<li class="k2">'5월은 혈압 측정의 달' 캠페인 릴레…</li>
+				<li class="k3">만성질환예방과 | 2020-05-15</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k7.PNG"></li>
+				<li class="k2">[생활 속 거리 두기] 공익영상 "변화…</li>
+				<li class="k3">위기소통담당관 | 2020-05-11</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k8.PNG"></li>
+				<li class="k2">[생활 속 거리 두기] 공익영상 "변화…</li>
+				<li class="k3">위기소통담당관 | 2020-05-11</li>
+			</ul>
+		</div>
+		<div class="k1">
+			<ul>
+				<li style="margin:0;"><img src="./index2k9.PNG"></li>
+				<li class="k2">[생활 속 거리 두기] 공익영상 "변화…</li>
+				<li class="k3">위기소통담당관 | 2020-05-11</li>
+			</ul>
+		</div>
+	</section>
+	<div style="margin-left: 260px;">
+		<img src="./index2a1.PNG">
+		<img src="./index2a2.PNG">
+		<img src="./index2a3.PNG">
+		<img src="./index2a4.PNG">
+		<img src="./index2a5.PNG">
+		<img src="./index2a6.PNG">
+	</div>
+</section>
+<div class="clear"></div>
+<footer>
+	<section id="footsec">
+		<nav id="footnav">
+			<ul>
+				<li style="font-weight: bold;font-size: 17px; margin-right: 30px;">관련링크 < > </li>
+				<li>임상진료지침 디지털 가이드라인</li>
+				<li>KoGES</li>
+				<li>질병관리본부국제학술지</li>
+				<li>만성신장병코호트연구</li>
+				<li>국민건강영양조사</li>
+				<li>국립의과학지식센터</li>
+				<li>보건복지통계</li>
+			</ul>
+		</nav>
+	</section>
+	<div class="clear"></div>
+	<section>
+		<nav id="line">
+			<ul id="line1">
+				<li>이용안내</li>
+				<li style="color: #21A089;">개인정보처리방침</li>
+				<li>웹접근성품질인증</li>
+				<li>저작권정책</li>
+			</ul>
+			<ul id="line2">
+				<li>질병관리본부 관련기관</li>
+				<li>보건환경연구원</li>
+				<li>보건복지부 및 소속기관</li>
+				<li>보건복지부 산하기관</li>
+			</ul>
+		</nav>
+	</section>
+	<div id="address">
+		<img src="./a1.PNG">
+	</div>
+	<div id="customer">
+		<img src="./a2.PNG">
+	</div>
+</footer>
+</body>
+</html>
